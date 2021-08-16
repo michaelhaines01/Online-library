@@ -1,40 +1,43 @@
-<script src = "library.js"></script>
+<script src="library.js"></script>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookclub</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class = 'header'>Ye olde library</h1>    
-    <div class ="button_wrapper">
-        <button id = 'showform_btn'>Log Book</button>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">Ye olde library</h1>
+    <div class="button_wrapper">
+      <button id="showform_btn">Log Book</button>
     </div>
-    <div class ="container">
-        <div id = 'showform' style="display: none;" >
-            <form>
-                <label for="title">Title</label>
-                    <input type="text" id="title" class="form-control">
-                <label for="author">Author</label>
-                    <input type="text" id="author" class="form-control">
-                <div class = "form_wrapper">  
-                    <label for="pages">Pages</label>
-                        <input type="number" id="pages" min="10" max="100">
-                        <input type="radio" id="read" name = "marker" value="true">
-                    <label for="read">Read </label> 
-                        <input type="radio" id="unread" name = "marker" value="false">
-                    <label for="unread">Unread</label>
-                    <button id ='newbook_btn'>Add book</button>
-                </div>
-            </form>
-        </div>
+    <div class="container">
+      <div id="showform" style="display: none">
+        <form>
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control" />
+          <div class="form_wrapper">
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" min="10" max="10000" />
+            <input type="radio" id="read" name="marker" value="true" />
+            <label for="read">Read </label>
+            <input type="radio" id="unread" name="marker" value="false" />
+            <label for="unread">Unread</label>
+            <button id="newbook_btn">Add book</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class = 'width'>
-        <div class="card-columns">
-        </div>
+    <div class="width">
+      <div class="card-columns"></div>
     </div>
-</body>
-
+  </body>
 </html>
